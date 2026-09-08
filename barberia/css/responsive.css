@@ -1,0 +1,101 @@
+@media (max-width: 900px) {
+  nav {
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+  }
+
+  body.nav-open nav {
+    padding-right: calc(2rem + var(--scrollbar-compensation, 0px));
+  }
+
+  body.nav-open .whatsapp-float {
+    right: calc(2.5rem + var(--scrollbar-compensation, 0px));
+  }
+
+  nav.nav-scrolled {
+    padding: 0.85rem 2rem;
+  }
+
+  .nav-logo {
+    font-size: 1.35rem;
+    letter-spacing: 2px;
+    max-width: calc(100% - 52px);
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+    background: rgba(10,10,10,0.98);
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 1.5rem;
+    border-bottom: 1px solid rgba(184,184,184,0.15);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+  }
+
+  .nav-links.open { display: flex; }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 0.75rem 1rem;
+  }
+
+  .nav-cta {
+    display: inline-block !important;
+    margin-top: 0.5rem;
+  }
+
+  .hamburger { display: flex; }
+
+  section { padding: 5rem 2rem; }
+  #contacto { padding: 5rem 2rem; }
+  footer { padding: 2rem; }
+
+  .galeria-header { grid-template-columns: 1fr; gap: 1.5rem; }
+
+  .galeria-cinta-item {
+    width: clamp(200px, 42vw, 260px);
+    height: clamp(260px, 52vw, 320px);
+  }
+
+  .galeria-cinta-hint { display: none; }
+
+  .hero-badges { gap: 1.5rem; bottom: 2rem; }
+
+  .servicios-header { flex-direction: column; align-items: flex-start; }
+
+  .whatsapp-text { display: none; }
+  .whatsapp-float { padding: 0.9rem; }
+}
+
+@media (max-width: 600px) {
+  .hero-title { font-size: 3.5rem; letter-spacing: -1px; }
+
+  .hero-actions,
+  .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions .btn-primary,
+  .hero-actions .btn-outline,
+  .cta-buttons .btn-primary,
+  .cta-buttons .btn-outline {
+    width: 100%;
+  }
+
+  footer { flex-direction: column; text-align: center; }
+}

@@ -1,0 +1,47 @@
+#contacto {
+  background: var(--negro);
+  text-align: center;
+  padding: 8rem 4rem;
+}
+
+.cta-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-inner .section-label { display: block; text-align: center; }
+.cta-inner .section-title { margin-bottom: 1rem; }
+.cta-inner .section-desc { margin: 0 auto 3rem; text-align: center; }
+
+/* .cta-buttons — estilos en base.css (.hero-actions, .cta-buttons) */
+
+.horario-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1px;
+  background: rgba(184,184,184,0.1);
+  margin-top: 5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.horario-item {
+  background: var(--negro);
+  padding: 1.8rem;
+  text-align: center;
+}
+
+.horario-dia {
+  font-size: 0.6rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--plateado);
+  margin-bottom: 0.4rem;
+}
+
+.horario-hora {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--blanco-suave);
+}

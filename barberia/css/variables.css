@@ -1,0 +1,14 @@
+:root {
+  --negro: #0a0a0a;
+  --negro-suave: #111111;
+  --negro-medio: #1a1a1a;
+  --plateado: #b8b8b8;
+  --plateado-claro: #e0e0e0;
+  --plateado-oscuro: #707070;
+  --blanco: #ffffff;
+  --blanco-suave: #f5f5f5;
+  --gris: #2a2a2a;
+  --gris-texto: #9ca3af;
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Montserrat', sans-serif;
+}
