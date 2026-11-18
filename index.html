@@ -2,313 +2,301 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Milán Barber Studio — Barbería con servicio barra libre. Cortes, barba y estilo en un ambiente moderno." />
-  <title>Milán Barber Studio | MilanBarberStudio.com</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/variables.css" />
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/navbar.css" />
-  <link rel="stylesheet" href="css/hero.css" />
-  <link rel="stylesheet" href="css/servicios.css" />
-  <link rel="stylesheet" href="css/galeria.css" />
-  <link rel="stylesheet" href="css/testimonios.css" />
-  <link rel="stylesheet" href="css/contacto.css" />
-  <link rel="stylesheet" href="css/footer.css" />
-  <link rel="stylesheet" href="css/whatsapp.css" />
-  <link rel="stylesheet" href="css/animations.css" />
-  <link rel="stylesheet" href="css/background.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:;">
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-Du+OJKJSbdUgz5nrHeWWINvez6XKDDU/tyj/5c2uvwo=' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; base-uri 'self'; form-action 'self'" />
+  <script>document.documentElement.classList.add('js')</script>
+
+  <title>Milán Barber Studio · Barbería de autor</title>
+  <meta name="description" content="Milán Barber Studio — barbería de autor. Corte, barba y ritual de cuidado en una sola experiencia, a un precio único. Reserva por WhatsApp." />
+  <meta name="theme-color" content="#0b0a09" />
+  <link rel="canonical" href="https://milanbarberstudio.com/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230b0a09'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='40' fill='%23c9a96e' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_MX" />
+  <meta property="og:site_name" content="Milán Barber Studio" />
+  <meta property="og:title" content="Milán Barber Studio · Barbería de autor" />
+  <meta property="og:description" content="Corte, barba y ritual de cuidado en una sola experiencia, a un precio único." />
+  <meta property="og:url" content="https://milanbarberstudio.com/" />
+  <meta property="og:image" content="https://milanbarberstudio.com/assets/images/og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" />
+  <link rel="preload" as="image" href="assets/images/hero.webp" imagesrcset="assets/images/hero-sm.webp 768w, assets/images/hero.webp 1536w" imagesizes="100vw" fetchpriority="high" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarberShop",
+    "name": "Milán Barber Studio",
+    "url": "https://milanbarberstudio.com/",
+    "image": "https://milanbarberstudio.com/assets/images/og.jpg",
+    "telephone": "+52 667 123 4567",
+    "priceRange": "$$$",
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "20:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "10:00", "closes": "15:00" }
+    ]
+  }
+  </script>
 </head>
 <body>
 
-  <div class="bg-ambient" aria-hidden="true"></div>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-  <nav>
-    <a href="#inicio" class="nav-logo">Milán <span>Barber Studio</span></a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#nosotros">Nosotros</a></li>
-      <li><a href="#galeria">Galería</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#contacto" class="nav-cta">Reservar</a></li>
-    </ul>
-    <button class="hamburger" id="hamburger" aria-label="Menú">
-      <span></span><span></span><span></span>
+  <!-- ═════════════ Navegación ═════════════ -->
+  <header class="nav" id="nav">
+    <a href="#inicio" class="brand" aria-label="Milán Barber Studio, inicio">
+      <span class="brand-name">Milán</span>
+      <span class="brand-sub">Barber Studio</span>
+    </a>
+
+    <nav class="nav-menu" id="navMenu" aria-label="Principal">
+      <ul>
+        <li><a href="#nosotros">La casa</a></li>
+        <li><a href="#galeria">Trabajo</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#testimonios">Clientes</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <a href="#contacto" class="nav-cta">Reservar</a>
+
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span>
     </button>
-  </nav>
+  </header>
 
-  <section id="inicio">
-    <div class="hero-bg"></div>
-    <div class="hero-grid"></div>
-    <div class="hero-lines"></div>
-    <div class="hero-orbs" aria-hidden="true">
-      <span class="hero-orb hero-orb-1"></span>
-      <span class="hero-orb hero-orb-2"></span>
-      <span class="hero-orb hero-orb-3"></span>
-    </div>
-    <div class="hero-shimmer" aria-hidden="true"></div>
-    <div class="hero-content">
-      <p class="hero-eyebrow">✦ Estilo · Precisión · Actitud ✦</p>
-      <h1 class="hero-title">
-        Milán <em>Barber Studio</em>
-      </h1>
-      <div class="hero-divider"></div>
-      <p class="hero-sub">Corte · Barba · Barra Libre</p>
-      <div class="hero-actions">
-        <a href="#galeria" class="btn-primary"><span>Ver cortes</span></a>
-        <a href="#contacto" class="btn-outline"><span>Reservar cita</span></a>
-      </div>
-    </div>
-    <div class="hero-badges">
-      <div class="badge">
-        <span class="badge-num">+1K</span>
-        <span class="badge-text">Clientes felices</span>
-      </div>
-      <div class="badge">
-        <span class="badge-num">∞</span>
-        <span class="badge-text">Barra libre</span>
-      </div>
-      <div class="badge">
-        <span class="badge-num">5★</span>
-        <span class="badge-text">Calificación</span>
-      </div>
-    </div>
-  </section>
+  <main id="contenido">
 
-  <section id="nosotros">
-    <div class="nosotros-inner">
-      <span class="section-label reveal">Sobre nosotros</span>
-      <h2 class="section-title reveal reveal-delay-1">Tu estilo, <em>nuestra pasión</em></h2>
-      <p class="section-desc reveal reveal-delay-2">
-        En Milán Barber Studio combinamos técnica clásica con tendencias modernas. Somos un espacio pensado para el caballero que busca un corte impecable, un ambiente relajado y un trato de primera. Nuestro concepto barra libre te permite disfrutar de todos nuestros servicios en una sola visita.
-      </p>
-      <div class="nosotros-stats reveal reveal-delay-3">
-        <div class="nosotros-stat">
-          <span class="nosotros-stat-num">10+</span>
-          <span class="nosotros-stat-text">Años de experiencia</span>
-        </div>
-        <div class="nosotros-stat">
-          <span class="nosotros-stat-num">100%</span>
-          <span class="nosotros-stat-text">Dedicación</span>
-        </div>
-        <div class="nosotros-stat">
-          <span class="nosotros-stat-num">1</span>
-          <span class="nosotros-stat-text">Precio, todo incluido</span>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- ═════════════ Hero ═════════════ -->
+    <section id="inicio" class="hero">
+      <img class="hero-img"
+           src="assets/images/hero.webp"
+           srcset="assets/images/hero-sm.webp 768w, assets/images/hero.webp 1536w"
+           sizes="100vw"
+           width="1536" height="1024"
+           alt=""
+           fetchpriority="high" />
+      <div class="hero-shade" aria-hidden="true"></div>
 
-  <section id="galeria">
-    <div class="galeria-header">
-      <div>
-        <span class="section-label reveal">Nuestro trabajo</span>
-        <h2 class="section-title reveal reveal-delay-1">Galería <em>de cortes</em></h2>
-      </div>
-      <p class="section-desc reveal reveal-delay-2">
-        Cada corte es único. Explora algunos de nuestros estilos más recientes — fades, degradados, barbas y diseños personalizados.
-      </p>
-    </div>
-    <div class="galeria-cinta-wrap reveal">
-      <div id="galeriaCinta" class="galeria-cinta" aria-label="Galería de cortes"></div>
-    </div>
-    <p class="galeria-cinta-hint reveal reveal-delay-1">Pasa el cursor para pausar · Desliza en móvil</p>
-  </section>
-
-  <section id="servicios">
-    <div class="servicios-header">
-      <div>
-        <span class="section-label reveal">Servicios</span>
-        <h2 class="section-title reveal reveal-delay-1">Barra <em>libre</em></h2>
-      </div>
-      <p class="section-desc reveal reveal-delay-2">
-        Un solo precio, todos los servicios incluidos. Llega, relájate y disfruta de la experiencia completa sin preocuparte por extras.
-      </p>
-    </div>
-
-    <div class="barra-libre-banner reveal">
-      <div>
-        <span class="barra-libre-badge">Todo incluido</span>
-        <h3 class="barra-libre-title">Barra Libre Milán</h3>
-        <p class="barra-libre-desc">
-          Paga una vez y accede a corte, barba, cejas, lavado y todos los servicios de la casa durante tu visita. Sin sorpresas, sin límites.
+      <div class="hero-content">
+        <p class="eyebrow hero-in">Barbería de autor</p>
+        <h1 class="hero-title hero-in">
+          Milán
+          <em>Barber Studio</em>
+        </h1>
+        <p class="hero-lead hero-in">
+          Corte, barba y ritual de cuidado en una sola experiencia.<br class="br-desktop" />
+          Un precio. Sin prisa. Sin concesiones.
         </p>
-      </div>
-      <div class="barra-libre-precio">
-        Consultar
-        <span>Precio único por visita</span>
-      </div>
-    </div>
-
-    <span class="servicios-incluidos-label reveal">Incluido en barra libre</span>
-    <div class="servicios-grid">
-
-      <div class="servicio-card reveal">
-        <span class="servicio-incluido">Incluido</span>
-        <svg class="servicio-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M6 2v6l3 3-3 3v6M12 8l6-6M12 16l6 6M12 8l-2 2 2 2M12 16l-2-2 2-2"/>
-        </svg>
-        <h3 class="servicio-name">Corte Clásico</h3>
-        <p class="servicio-desc">Corte tradicional con acabado perfecto, adaptado a tu estilo. Incluye lavado y secado.</p>
-      </div>
-
-      <div class="servicio-card reveal reveal-delay-1">
-        <span class="servicio-incluido">Incluido</span>
-        <svg class="servicio-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/>
-          <circle cx="12" cy="9" r="2.5"/>
-        </svg>
-        <h3 class="servicio-name">Arreglo de Barba</h3>
-        <p class="servicio-desc">Definición y arreglo con navaja, toalla caliente y aceites esenciales.</p>
-      </div>
-
-      <div class="servicio-card reveal reveal-delay-2">
-        <span class="servicio-incluido">Incluido</span>
-        <svg class="servicio-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M3 6h18M3 12h18M3 18h18"/>
-        </svg>
-        <h3 class="servicio-name">Fade & Degradado</h3>
-        <p class="servicio-desc">Degradado con máquina y tijera. Desde skin fade hasta high fade con textura.</p>
-      </div>
-
-      <div class="servicio-card reveal reveal-delay-3">
-        <span class="servicio-incluido">Incluido</span>
-        <svg class="servicio-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <circle cx="12" cy="12" r="3"/>
-          <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/>
-        </svg>
-        <h3 class="servicio-name">Cejas & Detalles</h3>
-        <p class="servicio-desc">Perfilado de cejas y acabados finos para un look completo y pulido.</p>
-      </div>
-
-      <div class="servicio-card reveal reveal-delay-4">
-        <span class="servicio-incluido">Incluido</span>
-        <svg class="servicio-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-        </svg>
-        <h3 class="servicio-name">Tratamiento Capilar</h3>
-        <p class="servicio-desc">Hidratación y brillo para recuperar la vitalidad de tu cabello.</p>
-      </div>
-
-      <div class="servicio-card reveal reveal-delay-1">
-        <span class="servicio-incluido">Incluido</span>
-        <svg class="servicio-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M9.5 3H5a2 2 0 0 0-2 2v4m6.5-6 5 5M9.5 3l5 5M14.5 8H19a2 2 0 0 1 2 2v4m-6.5-6-5 5"/>
-          <path d="m3 14 2 2 4-4M13 14l2 2 4-4"/>
-        </svg>
-        <h3 class="servicio-name">Diseño de Líneas</h3>
-        <p class="servicio-desc">Líneas y patrones artísticos para expresar tu personalidad con estilo único.</p>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="testimonios">
-    <div class="testimonios-header">
-      <span class="section-label reveal">Lo que dicen</span>
-      <h2 class="section-title reveal reveal-delay-1">Clientes que <em>confían</em></h2>
-      <p class="section-desc reveal reveal-delay-2">La satisfacción de nuestros clientes es nuestro mayor orgullo.</p>
-    </div>
-    <div class="testimonios-grid">
-
-      <div class="testimonio-card reveal">
-        <div class="testimonio-estrellas">
-          <span class="estrella">★</span><span class="estrella">★</span><span class="estrella">★</span><span class="estrella">★</span><span class="estrella">★</span>
+        <div class="hero-actions hero-in">
+          <a href="#contacto" class="btn btn-gold">Reservar cita</a>
+          <a href="#galeria" class="btn-link">Ver el trabajo</a>
         </div>
-        <p class="testimonio-texto">"El mejor corte que he tenido en años. La barra libre es increíble — sales con todo hecho y sin pagar de más."</p>
-        <div class="testimonio-autor">
-          <div class="autor-avatar">CM</div>
-          <div class="autor-info">
-            <strong>Carlos Mendoza</strong>
-            <span>Cliente frecuente</span>
+      </div>
+
+      <a href="#nosotros" class="scroll-cue" aria-label="Bajar a la siguiente sección">
+        <span>Descubrir</span>
+        <i aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <!-- ═════════════ Nosotros ═════════════ -->
+    <section id="nosotros" class="section about">
+      <div class="container about-grid">
+        <figure class="about-figure reveal">
+          <img src="assets/images/galeria/fade-clasico.webp" width="1200" height="800" loading="lazy" decoding="async"
+               alt="Barbero terminando un fade clásico en Milán Barber Studio" />
+        </figure>
+
+        <div class="about-text">
+          <p class="eyebrow reveal"><span class="num">01</span> La casa</p>
+          <h2 class="section-title reveal">Tu estilo, <em>nuestra pasión</em></h2>
+          <p class="body-text reveal">
+            En Milán Barber Studio combinamos técnica clásica con la precisión de las tendencias actuales.
+            Un espacio pensado para el caballero que valora un corte impecable, un ambiente sereno
+            y un trato a la altura.
+          </p>
+          <p class="body-text reveal">
+            Nuestro concepto de <strong>barra libre</strong> reúne todos los servicios de la casa en una sola visita:
+            usted sólo se sienta y se deja atender.
+          </p>
+
+          <dl class="stats reveal">
+            <div><dt>10+</dt><dd>Años de oficio</dd></div>
+            <div><dt>1</dt><dd>Precio, todo incluido</dd></div>
+            <div><dt>5.0</dt><dd>Calificación de clientes</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═════════════ Galería ═════════════ -->
+    <section id="galeria" class="section gallery">
+      <div class="container">
+        <header class="section-head split">
+          <div>
+            <p class="eyebrow reveal"><span class="num">02</span> El trabajo</p>
+            <h2 class="section-title reveal">Galería <em>de cortes</em></h2>
+          </div>
+          <p class="body-text reveal">
+            Cada corte se diseña para quien lo lleva. Fades, texturas, barbas y diseños hechos a mano, uno a la vez.
+          </p>
+        </header>
+
+        <div class="gallery-grid" id="galeriaGrid"></div>
+      </div>
+    </section>
+
+    <!-- ═════════════ Servicios ═════════════ -->
+    <section id="servicios" class="section services">
+      <div class="container">
+        <header class="section-head center">
+          <p class="eyebrow reveal"><span class="num">03</span> Servicios</p>
+          <h2 class="section-title reveal">La barra libre <em>Milán</em></h2>
+          <p class="body-text reveal">
+            Un solo precio por visita y todos los servicios de la casa incluidos.
+            Sin extras, sin sorpresas.
+          </p>
+        </header>
+
+        <div class="offer reveal">
+          <div class="offer-main">
+            <span class="offer-tag">Todo incluido</span>
+            <p class="offer-text">
+              Corte, barba, cejas, lavado y tratamiento durante su visita.
+              Una experiencia completa, cuidada en cada detalle.
+            </p>
+          </div>
+          <div class="offer-price">
+            <span class="offer-price-label">Precio por visita</span>
+            <span class="offer-price-value">Consultar</span>
+            <a href="#contacto" class="btn-link">Reservar</a>
           </div>
         </div>
-      </div>
 
-      <div class="testimonio-card reveal reveal-delay-1">
-        <div class="testimonio-estrellas">
-          <span class="estrella">★</span><span class="estrella">★</span><span class="estrella">★</span><span class="estrella">★</span><span class="estrella">★</span>
+        <ol class="menu">
+          <li class="menu-item reveal">
+            <div class="menu-row"><h3>Corte clásico</h3><span class="menu-dots" aria-hidden="true"></span><span class="menu-incl">Incluido</span></div>
+            <p>Corte a tijera o máquina con acabado preciso, adaptado a su estilo. Incluye lavado y secado.</p>
+          </li>
+          <li class="menu-item reveal">
+            <div class="menu-row"><h3>Arreglo de barba</h3><span class="menu-dots" aria-hidden="true"></span><span class="menu-incl">Incluido</span></div>
+            <p>Perfilado con navaja, toalla caliente y aceites esenciales.</p>
+          </li>
+          <li class="menu-item reveal">
+            <div class="menu-row"><h3>Fade &amp; degradado</h3><span class="menu-dots" aria-hidden="true"></span><span class="menu-incl">Incluido</span></div>
+            <p>Del skin fade al high fade, con transición limpia y textura a medida.</p>
+          </li>
+          <li class="menu-item reveal">
+            <div class="menu-row"><h3>Cejas &amp; detalles</h3><span class="menu-dots" aria-hidden="true"></span><span class="menu-incl">Incluido</span></div>
+            <p>Perfilado de cejas y acabados finos para un resultado pulido.</p>
+          </li>
+          <li class="menu-item reveal">
+            <div class="menu-row"><h3>Tratamiento capilar</h3><span class="menu-dots" aria-hidden="true"></span><span class="menu-incl">Incluido</span></div>
+            <p>Hidratación y brillo para devolver vitalidad al cabello.</p>
+          </li>
+          <li class="menu-item reveal">
+            <div class="menu-row"><h3>Diseño de líneas</h3><span class="menu-dots" aria-hidden="true"></span><span class="menu-incl">Incluido</span></div>
+            <p>Líneas y patrones trazados a mano, con la precisión de una firma.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ═════════════ Testimonios ═════════════ -->
+    <section id="testimonios" class="section testimonials">
+      <div class="container">
+        <header class="section-head center">
+          <p class="eyebrow reveal"><span class="num">04</span> Clientes</p>
+          <h2 class="section-title reveal">Quienes <em>vuelven</em></h2>
+        </header>
+
+        <div class="quotes">
+          <figure class="quote reveal">
+            <blockquote>El mejor corte que he tenido en años. Sales con todo hecho y sin pagar de más.</blockquote>
+            <figcaption><strong>Carlos Mendoza</strong><span>Cliente frecuente</span></figcaption>
+          </figure>
+          <figure class="quote reveal">
+            <blockquote>Ambiente impecable, trato excelente y el fade quedó perfecto. Es mi lugar de confianza.</blockquote>
+            <figcaption><strong>Luis Ramírez</strong><span>Nuevo cliente</span></figcaption>
+          </figure>
+          <figure class="quote reveal">
+            <blockquote>Meticulosos y creativos. El concepto de barra libre vale cada peso.</blockquote>
+            <figcaption><strong>Javier Villanueva</strong><span>Cliente desde 2022</span></figcaption>
+          </figure>
         </div>
-        <p class="testimonio-texto">"Ambiente moderno, trato excelente y el fade quedó perfecto. Milán Barber Studio es mi lugar de confianza."</p>
-        <div class="testimonio-autor">
-          <div class="autor-avatar">LR</div>
-          <div class="autor-info">
-            <strong>Luis Ramírez</strong>
-            <span>Nuevo cliente</span>
+      </div>
+    </section>
+
+    <!-- ═════════════ Contacto ═════════════ -->
+    <section id="contacto" class="section contact">
+      <div class="container contact-grid">
+        <div class="contact-text">
+          <p class="eyebrow reveal"><span class="num">05</span> Reservas</p>
+          <h2 class="section-title reveal">Reserve <em>su lugar</em></h2>
+          <p class="body-text reveal">
+            Atendemos con cita previa para dedicarle el tiempo que merece.
+            Escríbanos por WhatsApp y le confirmamos el horario.
+          </p>
+          <div class="contact-actions reveal">
+            <a href="https://wa.me/526671234567?text=Hola%2C%20quiero%20reservar%20en%20Mil%C3%A1n%20Barber%20Studio" target="_blank" rel="noopener" class="btn btn-gold">Reservar por WhatsApp</a>
+            <a href="tel:+526671234567" class="btn btn-ghost">Llamar · 667 123 4567</a>
           </div>
         </div>
-      </div>
 
-      <div class="testimonio-card reveal reveal-delay-2">
-        <div class="testimonio-estrellas">
-          <span class="estrella">★</span><span class="estrella">★</span><span class="estrella">★</span><span class="estrella">★</span><span class="estrella">★</span>
-        </div>
-        <p class="testimonio-texto">"Llevan años cortándome el cabello. Son meticulosos, creativos y el concepto barra libre vale cada peso."</p>
-        <div class="testimonio-autor">
-          <div class="autor-avatar">JV</div>
-          <div class="autor-info">
-            <strong>Javier Villanueva</strong>
-            <span>Cliente desde 2022</span>
-          </div>
+        <div class="hours reveal">
+          <h3 class="hours-title">Horario</h3>
+          <dl>
+            <div class="hours-row"><dt>Lunes a viernes</dt><span class="menu-dots" aria-hidden="true"></span><dd>9:00 – 20:00</dd></div>
+            <div class="hours-row"><dt>Sábado</dt><span class="menu-dots" aria-hidden="true"></span><dd>9:00 – 18:00</dd></div>
+            <div class="hours-row"><dt>Domingo</dt><span class="menu-dots" aria-hidden="true"></span><dd>10:00 – 15:00</dd></div>
+          </dl>
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
+  </main>
 
-  <section id="contacto">
-    <div class="cta-inner">
-      <span class="section-label">Agenda tu visita</span>
-      <h2 class="section-title reveal">¿Listo para el <em>cambio?</em></h2>
-      <p class="section-desc reveal reveal-delay-1">
-        Contáctanos por WhatsApp para reservar tu cita en Milán Barber Studio. Atendemos con o sin cita previa según disponibilidad.
-      </p>
-      <div class="cta-buttons reveal reveal-delay-2">
-        <a href="https://wa.me/526671234567?text=Hola%2C%20quiero%20reservar%20en%20Mil%C3%A1n%20Barber%20Studio" target="_blank" rel="noopener" class="btn-primary"><span>💬 Escribir por WhatsApp</span></a>
-        <a href="tel:+526671234567" class="btn-outline"><span>📞 Llamar ahora</span></a>
-      </div>
-
-      <div class="line-sep reveal reveal-delay-3"><div class="line-sep-diamond"></div></div>
-
-      <div class="horario-grid reveal reveal-delay-3">
-        <div class="horario-item">
-          <div class="horario-dia">Lunes – Viernes</div>
-          <div class="horario-hora">9:00 – 20:00</div>
-        </div>
-        <div class="horario-item">
-          <div class="horario-dia">Sábado</div>
-          <div class="horario-hora">9:00 – 18:00</div>
-        </div>
-        <div class="horario-item">
-          <div class="horario-dia">Domingo</div>
-          <div class="horario-hora">10:00 – 15:00</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="footer-logo">Milán Barber Studio</div>
-    <p class="footer-copy">© 2026 Milán Barber Studio · MilanBarberStudio.com · Todos los derechos reservados</p>
-    <div class="footer-social">
-      <a href="#" class="social-link" aria-label="Instagram">IG</a>
-      <a href="#" class="social-link" aria-label="Facebook">FB</a>
-      <a href="#" class="social-link" aria-label="TikTok">TK</a>
+  <!-- ═════════════ Footer ═════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#inicio" class="brand brand-footer" aria-label="Milán Barber Studio, volver arriba">
+        <span class="brand-name">Milán</span>
+        <span class="brand-sub">Barber Studio</span>
+      </a>
+      <ul class="footer-social">
+        <li><a href="#" aria-label="Instagram">Instagram</a></li>
+        <li><a href="#" aria-label="Facebook">Facebook</a></li>
+        <li><a href="#" aria-label="TikTok">TikTok</a></li>
+      </ul>
+      <p class="footer-copy">© <span id="year">2026</span> Milán Barber Studio</p>
     </div>
   </footer>
 
-  <a href="https://wa.me/526671234567?text=Hola%2C%20quiero%20reservar%20en%20Mil%C3%A1n%20Barber%20Studio" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contactar por WhatsApp">
-    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-    </svg>
-    <span class="whatsapp-text">Reservar cita</span>
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/526671234567?text=Hola%2C%20quiero%20reservar%20en%20Mil%C3%A1n%20Barber%20Studio" target="_blank" rel="noopener" class="wa-float" id="waFloat" aria-label="Reservar por WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 
-  <script src="js/galeria-config.js"></script>
-  <script src="js/galeria.js"></script>
+  <!-- Visor de fotos -->
+  <dialog class="lightbox" id="lightbox" aria-label="Visor de fotos">
+    <button class="lb-close" type="button" aria-label="Cerrar">×</button>
+    <button class="lb-nav lb-prev" type="button" aria-label="Foto anterior">‹</button>
+    <figure>
+      <img id="lbImg" alt="" />
+      <figcaption id="lbCaption"></figcaption>
+    </figure>
+    <button class="lb-nav lb-next" type="button" aria-label="Foto siguiente">›</button>
+  </dialog>
+
+  <script src="js/galeria-config.js" defer></script>
   <script src="js/main.js" defer></script>
 </body>
 </html>

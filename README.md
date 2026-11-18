@@ -1,34 +1,33 @@
 # Milán Barber Studio — Sitio web
 
-Landing page estática para barbería con concepto barra libre: hero, nosotros, galería de cortes, servicios y contacto por WhatsApp.
+Landing page estática para barbería con concepto barra libre: inicio, la casa, galería, servicios, testimonios y reservas por WhatsApp.
 
 **Dominio:** MilanBarberStudio.com
 
 ## Cómo ver el sitio
 
-Abre en el navegador:
-
-- `barberia/index.html`
-
-O desde la raíz del proyecto, `barberia.html` redirige a la carpeta `barberia/`.
+Abre `index.html` en el navegador (o sírvelo con `python -m http.server`).
+`barberia.html` redirige a `index.html` para enlaces antiguos.
 
 ## Estructura
 
 ```
-barberia/
-├── index.html
-├── css/
-├── js/
-├── partials/
-└── assets/images/galeria/   ← fotos JPG de la galería
+index.html
+css/styles.css               ← todos los estilos (paleta en :root, al inicio)
+js/main.js                   ← menú, galería, visor de fotos y animaciones
+js/galeria-config.js         ← lista de fotos de la galería
+assets/images/               ← foto principal (hero) e imagen para redes (og.jpg)
+assets/images/galeria/       ← fotos de cortes (.jpg originales + .webp optimizadas)
+tools/optimizar-imagenes.py  ← genera las versiones .webp ligeras
 ```
 
 ## Personalizar
 
-- **Galería:** agrega fotos en `barberia/js/galeria-config.js` (solo una línea por imagen) y guarda el JPG en `barberia/assets/images/galeria/`
-- **WhatsApp / teléfono:** busca `526671234567` en `barberia/index.html`
-- **Precio barra libre:** busca `Consultar` en la sección de servicios
-- **Estilos:** paleta negro, blanco y plateado en `barberia/css/variables.css`
+- **Galería:** guarda la foto en `assets/images/galeria/`, ejecuta `python tools/optimizar-imagenes.py` y agrega una línea en `js/galeria-config.js` apuntando al `.webp`.
+- **WhatsApp / teléfono:** busca `526671234567` en `index.html` (y `+52 667 123 4567` en el bloque de datos estructurados).
+- **Precio:** busca `Consultar` en la sección de servicios.
+- **Redes sociales:** reemplaza los `href="#"` del footer.
+- **Colores:** variables `--gold`, `--ink`, `--ivory` en `css/styles.css`.
 
 ## Tecnologías
 
